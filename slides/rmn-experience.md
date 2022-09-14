@@ -27,7 +27,9 @@ layout: bullets
 # Problems/Issues
 
 <v-clicks>
-- Timing -  started using Vite right as React 18 came out
-- Don't set NODE_ENV in your .env
-- Plugin bugs - React's plugin originally had a bug
+
+* Timing - React 18 launched right as we started using Vite
+* Plugin bugs - React's plugin originally had a bug
+* Don't set NODE_ENV in your .env
+
 </v-clicks>

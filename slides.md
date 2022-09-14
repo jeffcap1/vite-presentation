@@ -62,10 +62,9 @@ layout: statement
 # Demo
 
 --- 
-
-# ViteConf
-
-Free Virtual Conference happening on, October 11th
+layout: iframe
+url: https://viteconf.org/
+---
 
 ---
 layout: statement

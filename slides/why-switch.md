@@ -15,8 +15,11 @@ class: 'text-center'
 <img v-click src='/christmas-vaction-sled.gif' class='m-auto' />
 
 ---
+layout: image-right
+image: /happy-dev.jpg
+---
 
-# Dev EX
+# DX
 
 <v-clicks>
 

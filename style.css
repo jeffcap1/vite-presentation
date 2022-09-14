@@ -1,0 +1,4 @@
+svg.astro-icon path:nth-child(1),
+svg.astro-icon path:nth-child(4) {
+	fill: #ffffff;
+}

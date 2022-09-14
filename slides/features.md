@@ -8,27 +8,15 @@ layout: section
 
 # [Esbuild](https://esbuild.github.io/)
 
-- 10 to 100x faster than current JS based bundlers
-
-<video v-click controls class="w-200 h-90">
-	<source src="/esbuild-video.mp4" type='video/mp4' />
-</video>
+<ul v-click='3'>
+	<li>10 to 100x faster than current JS based bundlers</li>
+</ul>
+<img v-click='2' src="/esbuild-timing-line.jpg" />
+<img v-click='1' src="/esbuild-other-platforms-timings.jpg" />
 
 <!--
 This is a replacement for Webpack
 Esbuild is written in Go and compiled to native code making it incredible fast when compared to any javascript based compiler.
--->
-
----
-
-# HMR (Hot Module Replacement)
-
-- Vite: https://stackblitz.com/edit/vitejs-vite-nl4bzg?file=src/App.jsx
-- CRA: 
-
-<!--
-Lightning Fast HMR allowing you to make changes without needing to refresh the page
-State is preserved between reloads
 -->
 
 ---
@@ -65,11 +53,15 @@ layout: bullets
 
 # Other Great Features
 
+<v-clicks>
+
 - Tiny Bundle Size
 - Easy Code Splitting
-- Great plugin API - Allows tools to be built on top
+- Hot Module Replacement (HMR)
 - Typscript support out of the box
+- Great plugin API - Allows tools to be built on top
 
+</v-clicks>
 
 <!--
 Uses Rollup for production builds

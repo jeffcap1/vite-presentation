@@ -1,6 +1,7 @@
 ---
 # try also 'default' to start simple
-theme: apple-basic
+# theme: apple-basic
+theme: seriph
 # apply any windi css classes to the current slide
 class: 'text-center'
 layout: intro-image
@@ -20,12 +21,10 @@ drawings:
 <div class='flex flex-col justify-center items-center'>
   <img src="/vite-logo.png" class="h-90 shadow mb-60" />
 
-  <!-- <div class="absolute bottom-10 bg-black/60 py-5 px-10"> -->
   <div class="absolute bottom-10">
     <h1 class='text-xxl shadow' style="text-shadow: 0 1px 2px #000000ab;">Vite</h1>
     <p style="text-shadow: 0 1px 2px #000000ab;">The future is <strong>Lighting FAST</strong></p>
   </div>
-  <!-- <div class='bg-black/60 w-screen center p10'> -->
 </div>
 
 ---
@@ -49,13 +48,27 @@ src: ./slides/getting-started.md
 ---
 
 ---
+src: ./slides/rmn-experience.md
+---
+
+---
 src: ./slides/things-to-consider.md
 ---
 
 ---
-layout: section
+layout: statement
 ---
+
+# Demo
+
+--- 
 
 # ViteConf
 
 Free Virtual Conference happening on, October 11th
+
+---
+layout: statement
+---
+
+# Questions?

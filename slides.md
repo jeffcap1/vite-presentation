@@ -1,7 +1,7 @@
 ---
 # try also 'default' to start simple
-# theme: apple-basic
-theme: seriph
+# theme: seriph
+theme: apple-basic
 # apply any windi css classes to the current slide
 class: 'text-center'
 layout: intro-image

@@ -5,20 +5,50 @@ layout: section
 # Features
 
 ---
+layout: bullets
+---
 
 # [Esbuild](https://esbuild.github.io/)
 
-<ul v-click='3'>
-	<li>10 to 100x faster than current JS based bundlers</li>
-</ul>
-<img v-click='2' src="/esbuild-timing-line.jpg" />
+<img v-click='3' src="/esbuild-timing-line.jpg" />
 <img v-click='1' src="/esbuild-other-platforms-timings.jpg" />
+<ul>
+	<li v-click='2'>For context, three.js is 585kb minified and 150kb gzip</li>
+	<li v-click='4'>10 to 100x faster than current JS based bundlers</li>
+</ul>
 
 <!--
 This is a replacement for Webpack
 Esbuild is written in Go and compiled to native code making it incredible fast when compared to any javascript based compiler.
 -->
 
+---
+layout: statement
+---
+
+# Wow, that's impressive
+# What is the configuration like?
+
+---
+layout: two-cols
+---
+
+# Webpack Config
+
+<div class="mr-2 overflow-y-scroll h-100">
+	<WebpackConfigCRA v-click />
+</div>
+
+::right::
+
+# Vite Config
+
+<div class="ml-2 overflow-y-scroll h-100">
+	<ViteConfig v-click />
+</div>
+
+---
+layout: bullets
 ---
 
 # Unbundled Local Development
@@ -33,8 +63,10 @@ Esbuild is written in Go and compiled to native code making it incredible fast w
 </v-clicks>
 
 <!--
-Why pre-bundle: lodash-es has over 600 internal modules! When we do import { debounce } from 'lodash-es', the browser fires off 600+ HTTP requests at the same time!
-Explain briefly and then show Vite pictures
+- Why pre-bundle:
+	+ lodash-es has over 600 internal modules!
+	+ When we do import { debounce } from 'lodash-es', the browser fires off 600+ HTTP requests at the same time!
+- Explain briefly and then show Vite pictures
 -->
 
 ---
@@ -51,6 +83,27 @@ Explain briefly and then show Vite pictures
 layout: bullets
 ---
 
+# Bundled in Production
+
+<v-clicks>
+
+- Vite bundles to production using a preconfigured version of Rollup
+- Uses Rollup instead of esbuild since it's more mature and feature rich
+- Http/2 and esm are stil ineffecient with multiple round trips to server
+- Ensures website still works with new and old browsers
+- Enables tree shaking, lazy loading, and common chunks
+
+</v-clicks>
+
+<!--
+- esbuild is great for bundling library code
+- missing some important features for apps like coe spliting and css
+-->
+
+---
+layout: bullets
+---
+
 # Other Great Features
 
 <v-clicks>
@@ -58,7 +111,7 @@ layout: bullets
 - Tiny Bundle Size
 - Easy Code Splitting
 - Hot Module Replacement (HMR)
-- Typscript support out of the box
+- Typescript support out of the box
 - Great plugin API - Allows tools to be built on top
 
 </v-clicks>
@@ -70,13 +123,12 @@ Updates can be made in vite.config.js and are well defined
 
 ---
 
-<!-- Image slide that shows different file types ?? -->
 # Built-in support for
 
 - <mdi-language-jsx class="text-[#366FD7]" /> JSX
 - <vscode-icons-file-type-typescript-official /> Typescript
 - <vscode-icons-file-type-css /> CSS
-- <vscode-icons-file-type-scss/> CSS preprocessors like Sass and Less
+- <vscode-icons-file-type-scss/> CSS preprocessors (Sass, Scss, Less, etc.)
 - <vscode-icons-file-type-image /> Static files like images
 - <vscode-icons-file-type-json /> JSON files
 

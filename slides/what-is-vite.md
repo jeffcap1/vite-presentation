@@ -1,14 +1,10 @@
----
-layout: bullets
----
-
 # What is the name?
 
 <v-clicks>
 
 - It is pronounced "veet"
 - It is the French word for _QUICK or FAST_
-- Created by, Evan You, who is also the creator of VueJs
+- Created by Evan You, who is also the creator of VueJs
 
 </v-clicks>
 

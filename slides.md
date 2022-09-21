@@ -9,7 +9,7 @@ image: /pexels-kelly-2618118.jpg
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
 # show line numbers in code blocks
-lineNumbers: false
+lineNumbers: true
 # some information about the slides, markdown enabled
 info: |
   ## Slide Deck for Vite Brown Bag

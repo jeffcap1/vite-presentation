@@ -89,7 +89,7 @@ layout: bullets
 
 - Vite bundles to production using a preconfigured version of Rollup
 - Uses Rollup instead of esbuild since it's more mature and feature rich
-- Http/2 and esm are stil ineffecient with multiple round trips to server
+- Http/2 and esm are still ineffecient with multiple round trips to server
 - Ensures website still works with new and old browsers
 - Enables tree shaking, lazy loading, and common chunks
 
@@ -98,6 +98,7 @@ layout: bullets
 <!--
 - esbuild is great for bundling library code
 - missing some important features for apps like coe spliting and css
+- remember back to the lodash-es example with over 600 internal modules, we wouldn't want that in production.
 -->
 
 ---

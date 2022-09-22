@@ -8,6 +8,7 @@ class: 'text-center'
 ---
 layout: section
 class: 'text-center'
+preload: false
 ---
 
 # Speed

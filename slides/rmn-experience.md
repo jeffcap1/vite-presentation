@@ -7,6 +7,7 @@ layout: section
 ---
 layout: image-left
 image: /amazing-single.gif
+preload: false
 ---
 
 # It's been amazing

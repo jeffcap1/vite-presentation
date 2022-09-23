@@ -30,6 +30,12 @@ layout: statement
 # What is the configuration like?
 
 ---
+
+# Have you ever built a Webpack Config?
+
+<img v-click src="/webpack-loaders-everywhere.jpg" />
+
+---
 layout: two-cols
 ---
 

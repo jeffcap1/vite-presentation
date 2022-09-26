@@ -140,7 +140,7 @@ async function dynamicImports() {
 
 ### Component Imports
 
-```jsx
+```jsx {1|3,4|6,13|9,10|all}
 import { lazy, Suspense } from 'react';
 
 const HomePage = lazy(() => import('./components/pages/HomePage'));

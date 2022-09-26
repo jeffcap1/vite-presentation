@@ -18,8 +18,9 @@ layout: bullets
 </ul>
 
 <!--
-This is a replacement for Webpack
-Esbuild is written in Go and compiled to native code making it incredible fast when compared to any javascript based compiler.
+- This is a replacement for Webpack
+- Esbuild is written in Go which is a C like language
+- Compiles down to native code making it incredible fast when compared to any javascript based compiler.
 -->
 
 ---

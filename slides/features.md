@@ -33,7 +33,7 @@ layout: statement
 
 # Have you ever built a Webpack Config?
 
-<img v-click src="/webpack-loaders-everywhere.jpg" />
+<img v-click src="/webpack-loaders-everywhere.jpg" style="max-width: 75%; margin: auto;" />
 
 ---
 layout: two-cols
@@ -108,6 +108,71 @@ layout: bullets
 -->
 
 ---
+
+# Code Splitting/Chunks
+
+<v-clicks>
+
+### Vite Config
+
+```js {1|5|all}
+import { defineConfig, splitVendorChunkPlugin } from 'vite'; // eslint-disable-line import/no-extraneous-dependencies
+
+export default defineConfig({
+	...
+	plugins: [react(), splitVendorChunkPlugin()],
+});
+```
+
+### Lazy Imports
+
+```js {all|2}
+async function dynamicImports() {
+	const VARIABLE_NAME = await import('package'); // lazy load large library
+}
+```
+
+</v-clicks>
+
+---
+
+# Code Splitting/Chunks Cont.
+
+### Component Imports
+
+```jsx
+import { lazy, Suspense } from 'react';
+
+const HomePage = lazy(() => import('./components/pages/HomePage'));
+const ErrorMessage = lazy(() => import('./components/molecules/ErrorMessage'));
+
+<Suspense fallback={<PageLoadingSpinner />}>
+	<BrowserRouter>
+		<Routes>
+			<Route path="/" element={<MainPage />} />
+			<Route path="*" element={<ErrorMessage />} />
+		</Routes>
+	</BrowserRouter>
+</Suspense>
+```
+
+---
+
+# Benefits?
+
+<v-clicks>
+
+### Before
+
+<img src='/bundle-sizes-before-code-splitting.png' style="max-width: 75%;" />
+
+### After
+
+<img src='/bundle-sizes-after-code-splitting.png' style="max-width: 75%;" />
+
+</v-clicks>
+
+---
 layout: bullets
 ---
 
@@ -116,7 +181,6 @@ layout: bullets
 <v-clicks>
 
 - Tiny Bundle Size
-- Easy Code Splitting
 - Hot Module Replacement (HMR)
 - Typescript support out of the box
 - Great plugin API - Allows tools to be built on top

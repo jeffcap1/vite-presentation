@@ -149,7 +149,7 @@ const ErrorMessage = lazy(() => import('./components/molecules/ErrorMessage'));
 <Suspense fallback={<PageLoadingSpinner />}>
 	<BrowserRouter>
 		<Routes>
-			<Route path="/" element={<MainPage />} />
+			<Route path="/" element={<HomePage />} />
 			<Route path="*" element={<ErrorMessage />} />
 		</Routes>
 	</BrowserRouter>

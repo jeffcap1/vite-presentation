@@ -6,11 +6,20 @@ layout: section
 
 ---
 layout: bullets
+preload: false
 ---
 
 # [Esbuild](https://esbuild.github.io/)
 
-<img v-click='3' src="/esbuild-timing-line.jpg" />
+<img
+	v-click='3'
+	v-if="$slidev.nav.clicks >= 3"
+	v-motion
+	:initial="{ y: -80 }"
+	:enter="{ y: 0 }"
+	src="/esbuild-timing-line.jpg"
+/>
+<img style='visibility: hidden' v-if="$slidev.nav.clicks < 3" src="/esbuild-timing-line.jpg" />
 <img v-click='1' src="/esbuild-other-platforms-timings.jpg" />
 <ul>
 	<li v-click='2'>For context, three.js is 585kb minified and 150kb gzip</li>
@@ -19,7 +28,7 @@ layout: bullets
 
 <!--
 - This is a replacement for Webpack
-- Esbuild is written in Go which is a C like language
+- Esbuild is written in Go which is a C-like language
 - Compiles down to native code making it incredible fast when compared to any javascript based compiler.
 -->
 
@@ -27,14 +36,28 @@ layout: bullets
 layout: statement
 ---
 
-# Wow, that's impressive
-# What is the configuration like?
+# How easy is it to set up?
 
 ---
 
-# Have you ever built a Webpack Config?
+# Webpack Config
 
-<img v-click src="/webpack-loaders-everywhere.jpg" style="max-width: 75%; margin: auto;" />
+<div class="mr-2 overflow-y-scroll h-100 relative">
+
+<WebpackConfigCRA v-click-hide />
+<div v-after class="top-0 left-0 right-0 bottom-[-2] absolute bg-black pb-10">
+	<img src="/webpack-loaders-and-plugins-everywhere.jpg" class="w-125 m-auto" />
+</div>
+
+</div>
+
+---
+
+# Vite Config
+
+<div class="ml-2 overflow-y-scroll h-100">
+	<ViteConfig v-click />
+</div>
 
 ---
 layout: two-cols
@@ -43,7 +66,7 @@ layout: two-cols
 # Webpack Config
 
 <div class="mr-2 overflow-y-scroll h-100">
-	<WebpackConfigCRA v-click />
+	<WebpackConfigCRA />
 </div>
 
 ::right::
@@ -51,7 +74,7 @@ layout: two-cols
 # Vite Config
 
 <div class="ml-2 overflow-y-scroll h-100">
-	<ViteConfig v-click />
+	<ViteConfig />
 </div>
 
 ---

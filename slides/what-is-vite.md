@@ -1,17 +1,19 @@
-# What is the name?
+# Quick Background Info
 
 <v-clicks>
 
 - It is pronounced "veet"
-- It is the French word for _QUICK or FAST_
-- Created by Evan You, who is also the creator of VueJs
+- The French word for _QUICK or FAST_
+- First came out in June 2020
+- Created by Evan You, who is also the creator of Vue.js
 
 </v-clicks>
 
 <img v-click src='/vite-concept.png' class='w-125 mt-5 mx-auto' />
 
 <!--
-- What's the name and what does it mean
+- How do you pronounce the name?
+- Is there a meaning to the name?
 - And now the next question is what is it and what does it do
 -->
 

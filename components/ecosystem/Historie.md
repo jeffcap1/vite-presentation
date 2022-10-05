@@ -2,4 +2,5 @@
 
 - Pronounced `/is.twaʁ/`, like "is·twar"
 - French word for _Story_
-- Upcoming Storybook alternative that
+- Upcoming Storybook alternative
+- Sane defaults with no config needed

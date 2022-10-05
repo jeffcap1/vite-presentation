@@ -33,6 +33,10 @@ preload: false
 -->
 
 ---
+src: ./slides/unbundled-development.md
+---
+
+---
 layout: statement
 ---
 
@@ -42,7 +46,7 @@ layout: statement
 
 # Webpack Config
 
-<div class="mr-2 overflow-y-scroll h-100 relative">
+<div class="mr-2 overflow-y-scroll h-100">
 
 <WebpackConfigCRA />
 
@@ -51,6 +55,16 @@ layout: statement
 ---
 
 <img src="/webpack-loaders-and-plugins-everywhere.jpg" class="w-9/12 m-auto" />
+
+---
+
+# Webpack Config
+
+<div class="mr-2 overflow-y-scroll h-100">
+
+<WebpackConfigCRA />
+
+</div>
 
 ---
 
@@ -77,38 +91,6 @@ layout: two-cols
 <div class="ml-2 overflow-y-scroll h-100">
 	<ViteConfig />
 </div>
-
----
-layout: bullets
----
-
-# Unbundled Local Development
-
-<v-clicks>
-
-- Pre-bundles modules and converts commonJS to ESM
-- Rewrites imports to use the pre-bundled version making it browser importable
-- Strongly caches dependencies
-- Only needs to compile your code changes
-
-</v-clicks>
-
-<!--
-- Why pre-bundle:
-	+ lodash-es has over 600 internal modules!
-	+ When we do import { debounce } from 'lodash-es', the browser fires off 600+ HTTP requests at the same time!
-- Explain briefly and then show Vite pictures
--->
-
----
-
-# Current Local Dev Flow
-![Bundler based dev server](/bundle-based-dev-server.svg)
-
----
-
-# New Local Dev Flow
-![ESM based dev server](/esm-based-dev-server.svg)
 
 ---
 layout: bullets
@@ -213,8 +195,8 @@ layout: bullets
 </v-clicks>
 
 <!--
-Uses Rollup for production builds
-Updates can be made in vite.config.js and are well defined
+- Uses Rollup for production builds
+- Updates can be made in vite.config.js and are well defined
 -->
 
 ---
@@ -229,7 +211,7 @@ Updates can be made in vite.config.js and are well defined
 - <vscode-icons-file-type-json /> JSON files
 
 <!--
-No loaders needed!
-CSS – Can support scss, sass, less, styl and .stylus by default.
-If the project contains a postcss file it will automatically be used during builds.
+- No loaders needed!
+- CSS – Can support scss, sass, less, styl and .stylus by default.
+- If the project contains a postcss file it will automatically be used during builds.
 -->

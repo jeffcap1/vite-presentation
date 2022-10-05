@@ -44,19 +44,20 @@ layout: statement
 
 <div class="mr-2 overflow-y-scroll h-100 relative">
 
-<WebpackConfigCRA v-click-hide />
-<div v-after class="top-0 left-0 right-0 bottom-[-2] absolute bg-black pb-10">
-	<img src="/webpack-loaders-and-plugins-everywhere.jpg" class="w-125 m-auto" />
-</div>
+<WebpackConfigCRA />
 
 </div>
+
+---
+
+<img src="/webpack-loaders-and-plugins-everywhere.jpg" class="w-9/12 m-auto" />
 
 ---
 
 # Vite Config
 
 <div class="ml-2 overflow-y-scroll h-100">
-	<ViteConfig v-click />
+	<ViteConfig />
 </div>
 
 ---

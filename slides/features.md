@@ -15,8 +15,8 @@ preload: false
 <img v-click src='/christmas-vaction-sled.gif' class='m-auto' />
 
 <!--
-	- Once you run Vite it will have you looking at all of your webpack projects and saying "Later Dudes!"
-	- Vite will be the kitchen wax, your project is the sausage sled, and you'll be like Clark Griswold setting a new land speed sleding record
+- Once you run Vite it will have you looking at all of your webpack projects and saying "Later Dudes!"
+- Vite will be the kitchen wax, your project is the saucer sled, and you'll be like Clark Griswold setting a new land speed sleding record
 -->
 
 ---
@@ -45,6 +45,7 @@ preload: false
 - This is a replacement for Webpack
 - Esbuild is written in Go which is a C-like language
 - Compiles down to native code making it incredible fast when compared to any javascript based compiler.
+- Explain shift in thinking with build tools
 -->
 
 ---
@@ -228,6 +229,6 @@ layout: bullets
 
 <!--
 - No loaders needed!
-- CSS – Can support scss, sass, less, styl and .stylus by default.
+- CSS: Can support scss, sass, less, styl and .stylus by default.
 - If the project contains a postcss file it will automatically be used during builds.
 -->

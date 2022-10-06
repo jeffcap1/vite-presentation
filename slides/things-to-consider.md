@@ -7,6 +7,7 @@ layout: bullets
 <v-clicks>
 
 - JSX files require a .jsx file extension
+- Requires Node 14.18+ and Node 16+
 - Only supports ESM imports
   + Your files must use esm module export/import
   + If a package uses commonJS Vite will try to convert it

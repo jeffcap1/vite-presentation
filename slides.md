@@ -9,7 +9,7 @@ image: /pexels-kelly-2618118.jpg
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
 # show line numbers in code blocks
-lineNumbers: false
+lineNumbers: true
 # some information about the slides, markdown enabled
 info: |
   ## Slide Deck for Vite Brown Bag
@@ -26,6 +26,13 @@ drawings:
     <p style="text-shadow: 0 1px 2px #000000ab;">The future is <strong>Lighting FAST</strong></p>
   </div>
 </div>
+
+<!-- 
+- Thanks for joining for this talk
+- Look to explain what Vite is and how it works
+- The impact it's had on the JS community
+- Why you'll want to consider it for your next project
+-->
 
 ---
 src: ./slides/what-is-vite.md

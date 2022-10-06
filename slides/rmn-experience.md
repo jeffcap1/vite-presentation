@@ -7,6 +7,7 @@ layout: section
 ---
 layout: image-left
 image: /amazing-single.gif
+preload: false
 ---
 
 # It's been amazing
@@ -15,10 +16,29 @@ image: /amazing-single.gif
 
 - Consistently fast to use
 - Very little configuration to get setup
-- Build times are 40-45 seconds
+- Build times are around 45 seconds
 - HMR has been incredibly fast even as the project is growing
 
 </v-clicks>
+
+---
+
+# Circle CI Builds
+
+<div class="columns-3 gap-8">
+	<div>
+		<h3 class="text-center">UI Looking Glass</h3>
+		<img src='/ui-looking-glass-webpack-build.png' class='w-max' />
+	</div>
+	<div>
+		<h3 class="text-center">UI Campaign Engine</h3>
+		<img src='/ui-campaign-engine-webpack-build.png' class='w-max' />
+	</div>
+	<div>
+		<h3 class="text-center">UI RMN Product Manager</h3>
+		<img src='/ui-rmn-product-manager-vite-build.png' class='w-max' />
+	</div>
+</div>
 
 ---
 layout: bullets
@@ -28,8 +48,11 @@ layout: bullets
 
 <v-clicks>
 
-* Timing - React 18 launched right as we started using Vite
-* Plugin bugs - React's plugin originally had a bug
-* Don't set NODE_ENV in your .env
+- Timing\: React 18 launched right as we started using Vite
+- Plugin bugs\: React's plugin originally had a bug
+- Don't set NODE_ENV in your .env
+- Needed to get in the habit of always using .jsx
+- Some files aren't created by default like an .eslintrc file
+- By default, the production folder is dist not build
 
 </v-clicks>

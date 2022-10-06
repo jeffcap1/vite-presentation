@@ -2,45 +2,37 @@
 layout: section
 ---
 
-# Built With Vite
+# How is the ecosystem?
 
 ---
 
-# <logos-vitest /> [Vitest](https://vitest.dev/) – Vite replacement for Jest
+<Vitest class='mb-8' />
 
-- 99% identical to the Jest API
-- Uses Vite for fast iterations
-- Smart retest only re-tests only files affected by change
+<ViteShot v-click class='mb-8' />
 
 ---
 
-# <logos-astro class='astro-icon' /> [Astro](https://astro.build/) – Meta Website Framework
+<Historie class='mb-8' />
 
-- Creates MPA’s that can either be SSG or SSR sites
-- Uses an islands architecture to create small or no js bundles
-- Can run Svelte, React, Solid, Vue, Lit, and many other frameworks and even include them on the same page!
-
+<Astro v-click class='mb-8' />
 
 ---
 
-# <logos-awesome /> [AwesomeVite](https://github.com/vitejs/awesome-vite) – Community driven starter projects
+<Slidev class='mb-8' />
 
-- CLI tool to quickly scaffold different types of projects 
-
----
-
-# <img src='/slidev-logo.svg' class="inline w-15" /> [Slidev](https://sli.dev/) - Slide/Presentation tool
-
-- Easily create a presentation using Markdown/Vite/VueJS/Tailwind and other tech
-- What these slides are built with!
+<AwesomeVite v-click class='mb-8' />
 
 ---
 
-# Who’s Using Vite?
+# Community Adoption of Vite
+
+<v-clicks>
 
 - <logos-laravel /> Laravel – Uses Vite by default in their projects
 - <logos-shopify /> Shopify – Hydrogen frontend framework uses Vite
 - <logos-ruby /> Ruby – Uses Vite to improve the Rails DX
-- <logos-storybook-icon /> Storybook – Has an adapter to use in Vite projects
 - <logos-nuxt-icon /> Nuxt, VitePress,  <logos-svelte-icon /> SvelteKit, <logos-solidjs-icon /> SolidStart – All use Vite by default as their bundler
 - More projects are switching each day and startups are being built on Vite
+- <logos-storybook-icon /> Storybook – Has an adapter to use in Vite projects
+
+</v-clicks>

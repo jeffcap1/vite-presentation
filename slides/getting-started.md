@@ -15,8 +15,6 @@ npm install
 npm run dev
 ```
 
-<a v-click="6" href="https://github.com/nordcloud/pat-frontend-template/blob/master/docs/CRA_MIGRATION_GUIDE.md" target="_blank" />
-
 ---
 layout: bullets
 ---

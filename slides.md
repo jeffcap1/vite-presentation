@@ -27,6 +27,13 @@ drawings:
   </div>
 </div>
 
+<!-- 
+  - Thanks for joining for this talk
+  - Look to explain what Vite is and how it works
+  - The impact it's had on the JS community
+  - Why you'll want to consider it for your next project
+-->
+
 ---
 src: ./slides/what-is-vite.md
 ---

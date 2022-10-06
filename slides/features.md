@@ -5,6 +5,21 @@ layout: section
 # Features
 
 ---
+layout: section
+class: 'text-center'
+preload: false
+---
+
+# Speed
+
+<img v-click src='/christmas-vaction-sled.gif' class='m-auto' />
+
+<!--
+	- Once you run Vite it will have you looking at all of your webpack projects and saying "Later Dudes!"
+	- Vite will be the kitchen wax, your project is the sausage sled, and you'll be like Clark Griswold setting a new land speed sleding record
+-->
+
+---
 layout: bullets
 preload: false
 ---
@@ -102,7 +117,7 @@ layout: bullets
 
 - Vite bundles to production using a preconfigured version of Rollup
 - Uses Rollup instead of esbuild since it's more mature and feature rich
-- Http/2 and esm are still ineffecient with multiple round trips to server
+- Http/2 and ESM are still ineffecient with multiple round trips to server
 - Ensures website still works with new and old browsers
 - Enables tree shaking, lazy loading, and common chunks
 
@@ -190,6 +205,7 @@ layout: bullets
 - Tiny Bundle Size
 - Hot Module Replacement (HMR)
 - Typescript support out of the box
+- Multi-Page Apps with multiple `.html` entrypoints
 - Great plugin API - Allows tools to be built on top
 
 </v-clicks>

@@ -6,6 +6,7 @@ layout: bullets
 
 <v-clicks>
 
+- Takes advantage of native browser ESM (Ecmascript Module) import/exports
 - Pre-bundles modules and converts commonJS to ESM
 - Rewrites imports to use the pre-bundled version making it browser importable
 - Strongly caches dependencies

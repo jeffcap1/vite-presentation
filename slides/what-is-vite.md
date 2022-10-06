@@ -2,8 +2,8 @@
 
 <v-clicks>
 
-- It is pronounced "veet"
-- The French word for _QUICK or FAST_
+- It is pronounced `/vit/`, like "veet"
+- The French word for `FAST`
 - First came out in June 2020
 - Created by Evan You, who is also the creator of Vue.js
 

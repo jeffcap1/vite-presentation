@@ -48,8 +48,11 @@ layout: bullets
 
 <v-clicks>
 
-* Timing - React 18 launched right as we started using Vite
-* Plugin bugs - React's plugin originally had a bug
-* Don't set NODE_ENV in your .env
+- Timing\: React 18 launched right as we started using Vite
+- Plugin bugs\: React's plugin originally had a bug
+- Don't set NODE_ENV in your .env
+- Needed to get in the habit of always using .jsx
+- Some files aren't created by default like an .eslintrc file
+- By default, the production folder is dist not build
 
 </v-clicks>
